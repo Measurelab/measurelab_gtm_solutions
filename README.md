@@ -1,2 +1,5 @@
 # mslb_google_analytics_web_rnd
-Files related to 
+
+This repo contains all files / projects related to Google Analytics. Including:
+
+
