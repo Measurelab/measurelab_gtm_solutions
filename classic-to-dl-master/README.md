@@ -1,0 +1,2 @@
+# classic-to-dl
+Two bits of code to be deployed as Custom HTML tags to grab classic values and push them to the data layer if there are hardcoded values on the page when classic GA library isn't available. classic_to_dl is the primary solution, and alt_gaq_grabber is a secondary solution for use in the case that the ecommerce values are pushed before GTM has loaded in—but could easily be adapted for events or pageviews too.

@@ -1,0 +1,30 @@
+var gaq = window._gaq;
+var ctdl_obj = {};
+var ctdl_arr = [];
+
+for(i=0;i < gaq.length;i++){
+  if(gaq[i][0] === "_addTrans"){
+    window.ctdl_obj.id = gaq[i][1];
+    window.ctdl_obj.affiliation = gaq[i][2];
+    window.ctdl_obj.revenue = gaq[i][3];
+  } else if(gaq[i][0] === "_addItem"){
+    window.ctdl_arr.push({
+          'id':gaq[i][2],
+          'name':gaq[i][3],
+          'category':gaq[i][4],
+		      'price':gaq[i][5],
+          'quantity':gaq[i][6]
+        })
+  } else if(gaq[i][0] === "_trackTrans"){
+    dataLayer.push({
+          'event': 'hcga_trans',
+            'ecommerce': {
+        		'purchase':{
+          			'actionField' : window.ctdl_obj,
+          			'products' : window.ctdl_arr
+        					}
+      					}
+        			}
+				);
+  }
+}
