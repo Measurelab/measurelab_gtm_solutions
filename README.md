@@ -1,6 +1,6 @@
-# Research and Development - Web Analytics
+# Measurelab GTM soltuions
 
-This repo contains all files / projects related to Google Analytics, Google Tag Manager, Data Layers & Google Optimise.
+This repo contains all files / projects related to the gtm solutions blog series
 
 
 
