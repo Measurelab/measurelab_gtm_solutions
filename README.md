@@ -1,6 +1,5 @@
-# Measurelab GTM soltuions
+![Measurelab logo](/measurelab_black.png)
+# [Project or Client index]
+This is a description of your project or client, with space below it to record further detail or a list of contents.
 
-This repo contains all files / projects related to the gtm solutions blog series
-
-
-
+## [More detail or contents title]
