@@ -19,12 +19,14 @@ to return the value in seconds, and add as a custom metric to the scroll depth v
 
 ## [Before unload](/before_unload.js) 
 Utilise beforeunload (or visibilitychange/pagehide on mobile) event to fire the *Engaged time* and *Scroll depth* information when the user has finished viewing the page—only adding one additional hit per page.
+
 **Implementation**: To be used in conjunction with *Before unload*, below, and *Scroll depth*, above.
 - Add this code, with script tags, in a custom HTML tag to fire on _All Pages_ on relevant pages.
 - Add the beforeunload custom event trigger to the scroll depth event, above.
 
 ## [Return to SERP](/return_to_serp.js)
 Implemented as a custom metric - 1 for when a user comes from a search engine and immediately goes back to the search engine. This adds a hash to the URL when a user arrives from Google, then using that to determine if the user’s hit the ‘back’ button to go back to the search engine and firing an event on that basis.
+
 **Implementation**: To be used in conjunction with *Before unload*, below, and *Scroll depth*, above.
 - Add this code, with script tags, in a custom HTML tag to fire on _All Pages_ and history change on gref on relevant pages.
 - Add a GA event tag firing on the returnToSerp custom event, with a hardcoded value of 1 in the relevant custom metric slot.
