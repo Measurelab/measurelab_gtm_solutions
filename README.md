@@ -1,5 +1,5 @@
 ![Measurelab logo](/measurelab_black.png)
-# Measurelab GTM soltuions
+# Measurelab GTM solutions
 
 This repo contains all files / projects related to the [gtm solutions blog series](https://www.measurelab.co.uk/blog/tag/gtm-solutions-corner/)
 
@@ -8,3 +8,4 @@ This repo contains all files / projects related to the [gtm solutions blog serie
 3. [GA calls into data layer pushes](/classic-to-dl/classic_to_dl.js)
 4. [Capture classic GA calls](classic-to-dl/alt_gaq_grabber)
 5. [Form field tracking](/form-field-updates)
+6. [Content metrics tracking](/content-metrics)
