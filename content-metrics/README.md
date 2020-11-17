@@ -1,6 +1,15 @@
 # Content Metrics
 These are a collection of code snippets to allow us to track a number of custom dimensions and metrics that pertain largely to content tracking.
 
+## [Container import](https://github.com/Measurelab/measurelab_gtm_solutions/blob/master/content-metrics/content_metrics_importable_container.json)
+
+The file 'content_metrics_importable_container' can be imported to your GTM container and has the relevant tags, triggers and variables to implement all of these tags. They should be suitably modified (e.g. adjusting UA IDs, adding Settings variables, adjusting metric/dimension indexes) before any changes are deployed.
+
+If you want to look at the code or 'manually' deploy anything, instructions below.
+
+---
+
+
 ## [Scroll depth](https://github.com/Measurelab/measurelab_gtm_solutions/blob/master/content-metrics/scroll_depth.js) - Event/custom metric
 This solution measures the depth the user has scrolled down the page and retains the maximum depth scrolled—so rather than returning the scroll depth _at time of beforeunload_, as would be the case if we used a variable, it will return the maximum depth the user has scrolled to as a custom metric.
 
